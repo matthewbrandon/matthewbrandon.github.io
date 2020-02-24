@@ -395,3 +395,6 @@ nextTurn();
 // Sounds
 // Animations
 // Rules Popup
+// Let you change emoji in hand
+// No Scrolling
+
