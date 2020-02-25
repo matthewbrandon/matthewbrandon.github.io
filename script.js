@@ -398,3 +398,5 @@ nextTurn();
 // Let you change emoji in hand
 // No Scrolling
 
+// Balance against p1 (first move random)
+// First xx turns no covering
