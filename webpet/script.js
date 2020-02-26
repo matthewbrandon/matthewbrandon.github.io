@@ -81,9 +81,13 @@ function petWebPal(howMuchPets) {
 // Objects / Dictionaries
 // declare object
 // lookup key to retrieve 
-export {
-    petWebPal,
-}
+
+// EXPORT is necessary for unit testing with script.test.js
+// But is not compatible with browser testing locally
+// export {
+//     petWebPal,
+// }
+
 
 console.log("End of Script File");
 
