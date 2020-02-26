@@ -1,4 +1,4 @@
-// Crystal Pet
+// WebPal
 // Feb 2020 Matthew Brandon Thompson
 
 // ----- DEFINITIONS -----
@@ -22,7 +22,13 @@ class Player {
 // Game Variables
 var howMuchPets, howManyFood, buyingFood;
 
+// Set the initial values
+var player = new Player(100, 5, 250);
+var pet = new Pet("Lion", 20, 50, 35);
+
+
 // ----- LOGIC -----
+
 function petWebPal(howMuchPets) {
     // return 10;
     if (howMuchPets < 1) {
@@ -33,6 +39,7 @@ function petWebPal(howMuchPets) {
     }   
 }
 
+// Click Functions
 function feedClicked(howManyFood) {
     howManyFood = document.getElementById("givingfood").value;
     console.log("Clicked FEED " + howManyFood + " Food");
@@ -56,10 +63,20 @@ function poopClicked() {
     // TODO
 }
 
+function setValuesToLabels() {
+    document.getElementById("happiness").value = pet.happiness;
+    document.getElementById("hunger").value = pet.hunger;
+    document.getElementById("fullness").value = pet.fullness;
+    document.getElementById("energy").value = player.energy;
+    document.getElementById("food").value = player.food;
+    document.getElementById("money").value = player.money;
+}
+
+// ----- RUNTIME -----
+setValuesToLabels();
 
 // ----- TODO -----
 
-// Initialize Values into objects
 // Display those values in the labels
 
 // Add Logic to Buttons
