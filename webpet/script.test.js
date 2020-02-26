@@ -1,6 +1,6 @@
-import { 
+import {
     petWebPal,
-} from "./script.js";
+} from "./script"
 
 // Describe is a jest method to contain tests, you can wrap a suite of tests in a describe block
 

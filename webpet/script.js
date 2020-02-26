@@ -28,12 +28,12 @@ function petWebPal(howMuchPets) {
     return 10;
 }
 
-function petClicked() {
-    howMuchPets = document.getElementById("pettingenergy").value;
-    // Increase Happiness by 3x
-    // Decrease Energy by 2x
-    console.log(howMuchPets);
-}
+// function petClicked() {
+//     howMuchPets = document.getElementById("pettingenergy").value;
+//     // Increase Happiness by 3x
+//     // Decrease Energy by 2x
+//     console.log(howMuchPets);
+// }
 
 
 // on button push, do it
@@ -75,7 +75,6 @@ function petClicked() {
 // Objects / Dictionaries
 // declare object
 // lookup key to retrieve 
-
 export {
     petWebPal,
 }
