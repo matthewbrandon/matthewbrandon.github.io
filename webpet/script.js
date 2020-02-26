@@ -19,8 +19,8 @@ class Player {
     }
 }
 
-// The energy you spend petting
-var howMuchPets;
+// Game Variables
+var howMuchPets, howManyFood, buyingFood;
 
 // ----- LOGIC -----
 function petWebPal(howMuchPets) {
@@ -30,28 +30,48 @@ function petWebPal(howMuchPets) {
     }
     else {
         return howMuchPets * 5;
-    }
-    
+    }   
 }
 
-// function petClicked() {
-//     howMuchPets = document.getElementById("pettingenergy").value;
-//     // Increase Happiness by 3x
-//     // Decrease Energy by 2x
-//     console.log(howMuchPets);
-// }
+function feedClicked(howManyFood) {
+    howManyFood = document.getElementById("givingfood").value;
+    console.log("Clicked FEED " + howManyFood + " Food");
+    // TODO
+}
 
+function petClicked(howMuchPets) {
+    howMuchPets = document.getElementById("pettingenergy").value;
+    console.log(howMuchPets + " Pets");
+    // TODO
+}
 
-// on button push, do it
+function buyClicked(buyingFood) {
+    buyingFood = document.getElementById("buyingfood").value;
+    console.log("Clicked BUY " + buyingFood + " Food");
+    // TODO
+}
+
+function poopClicked() {
+    console.log("Clicked Poop 💩💩");
+    // TODO
+}
+
 
 // ----- TODO -----
 
-// Initialize Values
+// Initialize Values into objects
+// Display those values in the labels
+
 // Add Logic to Buttons
+
+// New Animation Gifs
+// Nodding No
+// Eating
+// Being Pet (Happy)
+// Sad Response
 
 // ----- THOUGHTS -----
 
-// Animoji, need to convert (online worked) from mov to mp4. May want something to do local.
 // An inventory of items you can click on
 // Cool-Downs for each action
 
@@ -89,5 +109,5 @@ function petWebPal(howMuchPets) {
 // }
 
 
-console.log("End of Script File");
+// console.log("End of Script File");
 

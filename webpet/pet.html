@@ -13,6 +13,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
     </head>
     <body>
         <h1>🦁WebPal🦁</h1>
@@ -32,15 +33,19 @@
             </video>
         </div>
         <div class="container">
-            <label for="pettingenergy">How Much Pets?</label>
+            <label for="pettingenergy">Give Some Pets?</label>
             <input type="number" id="pettingenergy" name="pettingenergy">
             <a href="#" class="btn-two green" onclick="petClicked()">Pet</a>
             <br>
-            <a href="#" class="btn-two blue">Feed</a>
-            <a href="#" class="btn-two red">Play</a>
-            <a href="#" class="btn-two purple">Shop</a>
-            <a href="#" class="btn-two cyan">Poop</a>
-            <a href="#" class="btn-two yellow">Button</a>
+            <label for="givingfood">Give Some Food?</label>
+            <input type="number" id="givingfood" name="givingfood">
+            <a href="#" class="btn-two blue" onclick="feedClicked()">Feed</a>
+            <br>
+            <label for="givingfood">Buy Some Food?</label>
+            <input type="number" id="buyingfood" name="buyingfood">
+            <a href="#" class="btn-two purple" onclick="buyClicked()">Buy</a>
+            <br>
+            <a href="#" class="btn-two cyan" onclick="poopClicked()">Poop</a>
         </div>
         <h2>Player</h2>
         <div class="inventory">
