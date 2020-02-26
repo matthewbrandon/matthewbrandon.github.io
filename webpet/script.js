@@ -21,6 +21,8 @@ class Player {
 
 // Game Variables
 var howMuchPets, howManyFood, buyingFood;
+const pettingCost = 10;
+const pettingHappiness = 5;
 
 // Set the initial values
 var player = new Player(100, 5, 250);
@@ -31,26 +33,49 @@ var pet = new Pet("Lion", 20, 50, 35);
 
 function petWebPal(howMuchPets) {
     // return 10;
-    if (howMuchPets < 1) {
-        return false;
-    }
-    else {
-        return howMuchPets * 5;
-    }   
+    // if (howMuchPets < 1) {
+    //     return false;
+    // }
+    // else {
+    //     return howMuchPets * 5;
+    // }   
+    return howMuchPets * pettingHappiness;
 }
 
 // Click Functions
+function petClicked(howMuchPets) {
+    howMuchPets = document.getElementById("pettingenergy").value;
+    if (howMuchPets < 1) {
+        alert("Have to Pet at least once!");
+        // TODO ANIMATION
+        return false;
+    }
+    // Make sure you have enough energy
+    if (howMuchPets > (player.energy / pettingCost)) {
+        alert("Not Enough Energy for the Pets!!");
+        // TODO ANIMATION
+        return false;
+    }
+    // console.log(howMuchPets + " Pets");
+    // TODO ANIMATION
+
+    // Decrease Energy
+    player.energy -= (howMuchPets * pettingCost); 
+    
+    // Increase Happiness by X per pet
+    pet.happiness += petWebPal(howMuchPets);
+    
+    // Update Values
+    setValuesToLabels();
+}
+
 function feedClicked(howManyFood) {
     howManyFood = document.getElementById("givingfood").value;
     console.log("Clicked FEED " + howManyFood + " Food");
     // TODO
 }
 
-function petClicked(howMuchPets) {
-    howMuchPets = document.getElementById("pettingenergy").value;
-    console.log(howMuchPets + " Pets");
-    // TODO
-}
+
 
 function buyClicked(buyingFood) {
     buyingFood = document.getElementById("buyingfood").value;
