@@ -1,0 +1,33 @@
+{
+  "name": "matthewbrandon.github.io",
+  "version": "1.0.0",
+  "description": "Small Web Projects to learn competencies",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewbrandon/matthewbrandon.github.io.git"
+  },
+  "keywords": [
+    "Cool",
+    "Awesome",
+    "Rad",
+    "Great",
+    "Supercool",
+    "Queer",
+    "Lion",
+    "Glitter",
+    "Best"
+  ],
+  "author": "Matthew Brandon Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewbrandon/matthewbrandon.github.io/issues"
+  },
+  "homepage": "https://github.com/matthewbrandon/matthewbrandon.github.io#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

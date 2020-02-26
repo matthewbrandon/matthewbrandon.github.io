@@ -23,9 +23,9 @@ class Player {
 var howMuchPets;
 
 // ----- LOGIC -----
-function petYourPet(howMuchPets) {
-    decreaseEnergyPetting(howMuchPets);
-    increaseHappinessPetting(howMuchPets);
+function petWebPal(howMuchPets) {
+    // TODO
+    return 10;
 }
 
 function petClicked() {
@@ -35,11 +35,6 @@ function petClicked() {
     console.log(howMuchPets);
 }
 
-const stuff = decreaseEnergyPetting;
-
-function decreaseEnergyPetting(howMuchPets) {
-    return howMuchPets * 3;
-}
 
 // on button push, do it
 
@@ -79,6 +74,8 @@ function decreaseEnergyPetting(howMuchPets) {
 // forEach (with array and function)
 // Objects / Dictionaries
 // declare object
-// lookup key to retrieve value
+// lookup key to retrieve 
 
-// module.exports = decreaseEnergyPetting;
+export {
+    petWebPal,
+}
