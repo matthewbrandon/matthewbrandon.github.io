@@ -3,12 +3,19 @@
 
 // ----- DEFINITIONS -----
 class Pet {
-    constructor(name, happiness, energy, hunger, fullness) {
+    constructor(name, happiness, hunger, fullness) {
         this.name = name;
         this.happiness = happiness;
-        this.energy = energy;
         this.hunger = hunger;
         this.fullness = fullness;
+    }
+}
+
+class Player {
+    constructor(energy, food, money) {
+        this.energy = energy;
+        this.food = food;
+        this.money = money;
     }
 }
 
@@ -19,6 +26,13 @@ var howMuchPets;
 function petYourPet(howMuchPets) {
     decreaseEnergyPetting(howMuchPets);
     increaseHappinessPetting(howMuchPets);
+}
+
+function petClicked() {
+    howMuchPets = document.getElementById("pettingenergy").value;
+    // Increase Happiness by 3x
+    // Decrease Energy by 2x
+    console.log(howMuchPets);
 }
 
 const stuff = decreaseEnergyPetting;
@@ -67,4 +81,4 @@ function decreaseEnergyPetting(howMuchPets) {
 // declare object
 // lookup key to retrieve value
 
-module.exports = decreaseEnergyPetting;
+// module.exports = decreaseEnergyPetting;

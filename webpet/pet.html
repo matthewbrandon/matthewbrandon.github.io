@@ -9,13 +9,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Crystal Pet by MBT</title>
+        <title>WebPal by MBT</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
-        <h1>Crystal Pet</h1>
+        <h1>🦁WebPal🦁</h1>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -28,15 +28,14 @@
             <input type="number" id="fullness" name="fullness" disabled><br>
         </div>
         <div class ="pet">
-            <video width="300" height="300" autoplay>
-                <source src="./assets/lion.mp4" type="video/mp4">
-                Video unsupported in this Browser. Update Yrself
+            <img src="./assets/lion-basic.gif" alt="Lion Pet" style="width:256px;height:256px;">
             </video>
         </div>
         <div class="container">
-            <a href="#" class="btn-two green">Pet</a>
             <label for="pettingenergy">How Much Pets?</label>
-            <input type="number" id="pettingenergy" name="pettingenergy"><br>
+            <input type="number" id="pettingenergy" name="pettingenergy">
+            <a href="#" class="btn-two green" onclick="petClicked()">Pet</a>
+            <br>
             <a href="#" class="btn-two blue">Feed</a>
             <a href="#" class="btn-two red">Play</a>
             <a href="#" class="btn-two purple">Shop</a>
