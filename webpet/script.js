@@ -24,8 +24,14 @@ var howMuchPets;
 
 // ----- LOGIC -----
 function petWebPal(howMuchPets) {
-    // TODO
-    return 10;
+    // return 10;
+    if (howMuchPets < 1) {
+        return false;
+    }
+    else {
+        return howMuchPets * 5;
+    }
+    
 }
 
 // function petClicked() {
@@ -78,3 +84,6 @@ function petWebPal(howMuchPets) {
 export {
     petWebPal,
 }
+
+console.log("End of Script File");
+

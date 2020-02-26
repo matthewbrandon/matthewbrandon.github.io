@@ -8,6 +8,13 @@ describe("Button Click Functions", () => {
     // tests in here
     test("Should make sure you have energy then return amount to increase happiness", () => {
         // actual test
-        expect(petWebPal(5)).toEqual(10);
+        expect(petWebPal(2)).toEqual(10);
+    });
+    test("Should return 5x amount", () => {
+        // actual test
+        expect(petWebPal(1)).toEqual(5);
+    });
+    test("Should require positive integer", () => {
+        expect(petWebPal(-1)).toBe(false);
     });
 });
