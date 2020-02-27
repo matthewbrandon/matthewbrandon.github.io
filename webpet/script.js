@@ -157,45 +157,19 @@ setValuesToLabels();
 // Being Pet (Happy)
 // Sad Response
 
+// Concepts to Add:
+// Array (Add to Front, End and Update)
+// Dictionary
+// Loops (For, For/in, While, do while, forEach)
+
 // ----- THOUGHTS -----
 
 // An inventory of items you can click on
 // Cool-Downs for each action
 // Balance Numbers
 
-// ----- 100C Concepts -----
-
-// define attributes / variables
-// number
-// string
-// boolean
-// array
-// dictionary / objects
-// undefined
-// sample if / else
-// functions
-// parameters
-// returns
-// arrays
-// add to the front
-// add to the end
-// update values
-// loops 
-// for
-// for/in
-// while
-// do while
-// forEach (with array and function)
-// Objects / Dictionaries
-// declare object
-// lookup key to retrieve 
-
 // EXPORT is necessary for unit testing with script.test.js
 // But is not compatible with browser testing locally
 // export {
 //     petWebPal,
 // }
-
-
-// console.log("End of Script File");
-
