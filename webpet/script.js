@@ -133,7 +133,10 @@ function poopClicked() {
     setValuesToLabels();
 }
 
+var inputs;
 function setValuesToLabels() {
+    //inputs = document.getElementsByTagName("input");
+    //console.log(inputs);
     document.getElementById("happiness").value = pet.happiness;
     document.getElementById("hunger").value = pet.hunger;
     document.getElementById("fullness").value = pet.fullness;
