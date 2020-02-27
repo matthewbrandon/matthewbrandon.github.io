@@ -27,6 +27,8 @@ const foodHunger = 20;
 const foodFullness = 10;
 const maxFullness = 100;
 const foodCost = 125;
+const poopCost = 30;
+const howFulltoPoop = 30;
 
 // Set the initial values
 var player = new Player(100, 5, 250);
@@ -111,13 +113,24 @@ function buyClicked(buyingFood) {
     }
     // TODO BUYING Animation
     player.money -= (foodCost * buyingFood);
-    player.food += buyingFood;
+    player.food += parseInt(buyingFood);
     setValuesToLabels();
 }
 
 function poopClicked() {
     console.log("Clicked Poop 💩💩");
-    // TODO
+    if (pet.fullness < howFulltoPoop) {
+        alert("No Need to 💩💩");
+        return false;
+    }
+    if (player.energy < poopCost) {
+        alert ("Not Enough ⚡️⚡️");
+        return false;
+    }
+    // TODO Animation
+    pet.fullness = 0;
+    player.energy -= poopCost;
+    setValuesToLabels();
 }
 
 function setValuesToLabels() {
@@ -148,6 +161,7 @@ setValuesToLabels();
 
 // An inventory of items you can click on
 // Cool-Downs for each action
+// Balance Numbers
 
 // ----- 100C Concepts -----
 
