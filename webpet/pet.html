@@ -29,7 +29,8 @@
             <input type="number" id="fullness" name="fullness" disabled><br>
         </div>
         <div class ="pet">
-            <img src="./assets/lion-basic.gif" alt="Lion Pet" style="width:256px;height:256px;">
+            <video autoplay="autoplay" loop="loop" width="320" height="240">
+                <source src="./assets/lion-neutral.mp4" type="video/mp4" />
             </video>
         </div>
         <div class="container">
@@ -42,14 +43,14 @@
             <input type="number" id="givingfood" name="givingfood" value="1">
             <a href="#" class="btn-two blue" onclick="feedClicked()">Feed</a>
             <br>
-            <label for="givingfood">Buy Some Food?</label>
+            <label for="givingfood">Buy Food? (-125💎 +1🥨)</label>
             <input type="number" id="buyingfood" name="buyingfood" value="1">
             <a href="#" class="btn-two purple" onclick="buyClicked()">Buy</a>
             <br>
             <a href="#" class="btn-two cyan" onclick="poopClicked()">Poop</a>
         </div>
         <h2>Player</h2>
-        <div class="inventory">
+        <div class="player">
             <label for="energy">⚡️Energy:</label>
             <input type="number" id="energy" name="energy" disabled><br>
             <label for="food">🥨Food:</label>
