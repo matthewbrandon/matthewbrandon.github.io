@@ -23,6 +23,8 @@ class Player {
 var howMuchPets, howManyFood, buyingFood;
 const pettingCost = 10;
 const pettingHappiness = 5;
+const foodHunger = 20;
+const foodFullness = 10;
 
 // Set the initial values
 var player = new Player(100, 5, 250);
@@ -57,6 +59,7 @@ function petClicked(howMuchPets) {
         return false;
     }
     // console.log(howMuchPets + " Pets");
+    
     // TODO ANIMATION
 
     // Decrease Energy
@@ -101,8 +104,6 @@ function setValuesToLabels() {
 setValuesToLabels();
 
 // ----- TODO -----
-
-// Display those values in the labels
 
 // Add Logic to Buttons
 
