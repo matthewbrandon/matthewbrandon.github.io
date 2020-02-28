@@ -39,10 +39,17 @@ var pet = new Pet("Lion", 20, 50, 45);
 // TODO Needs more videos
 var petVideo = document.getElementById("petvideo");
 var videoList = [
-    "./assets/lion-neutral",
-    "./assets/"
+    "./assets/lion-neutral.mp4",
+    "./assets/lion-eat.mp4"
 ];
-var activeVideo = 0;
+var activeVideo = 1;
+activeVideo.removeAttribute("loop");
+petVideo.addEventListener('ended', function(e) {
+    activeVideo = 0;
+    petVideo.src = videoList[activeVideo];
+    petVideo.setAttribute("loop", "loop");
+    petVideo.play();
+  });
 
 
 // ----- LOGIC -----
