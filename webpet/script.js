@@ -34,6 +34,16 @@ const howFulltoPoop = 30;
 var player = new Player(100, 5, 250);
 var pet = new Pet("Lion", 20, 50, 45);
 
+// Page Variables
+// Video list based on http://jsfiddle.net/bnzqkpza
+// TODO Needs more videos
+var petVideo = document.getElementById("petvideo");
+var videoList = [
+    "./assets/lion-neutral",
+    "./assets/"
+];
+var activeVideo = 0;
+
 
 // ----- LOGIC -----
 
@@ -134,8 +144,10 @@ function poopClicked() {
 }
 
 var inputs;
+inputs = document.getElementsByTagName("input");
+
+// TODO Replace with Loop
 function setValuesToLabels() {
-    //inputs = document.getElementsByTagName("input");
     //console.log(inputs);
     document.getElementById("happiness").value = pet.happiness;
     document.getElementById("hunger").value = pet.hunger;
@@ -150,10 +162,7 @@ setValuesToLabels();
 
 // ----- TODO -----
 
-// Add Logic to Buttons
-
-// New Animation Gifs
-
+// New Animation Videos
 // APPARENTLY MP4 is much better than gif
 // Nodding No
 // Eating
@@ -176,3 +185,5 @@ setValuesToLabels();
 // export {
 //     petWebPal,
 // }
+
+// 
