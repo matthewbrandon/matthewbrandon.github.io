@@ -39,7 +39,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        {/* <MyComp/> */}
+        {/* <MyComp /> */}
       </div>
     )
   }

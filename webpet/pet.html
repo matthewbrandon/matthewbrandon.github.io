@@ -1,0 +1,64 @@
+<!-- Crystal Pet -->
+<!-- Feb 2020 Matthew Brandon Thompson -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WebPal by MBT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel='icon' href='favicon.ico' type='image/x-icon' >
+    </head>
+    <body>
+        <h1>🦁WebPal🦁</h1>
+        <div class="stats">
+            <label for="happiness">💗Happiness:</label>
+            <input type="number" id="happiness" name="happiness" disabled><br>
+            <label for="hunger">🍓Hunger:</label>
+            <input type="number" id="hunger" name="hunger" disabled><br>
+            <label for="fullness">💩Fullness:</label>
+            <input type="number" id="fullness" name="fullness" disabled><br>
+        </div>
+        <div class ="pet">
+            <video id ="petvideo" playsinline muted autoplay="autoplay" loop="loop" width="320" height="240">
+                <source src="./assets/lion-neutral.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="container">
+            <!-- TODO Make it so that it can grab these numbers from js -->
+            <label for="pettingenergy">Give Some Pets? (-10⚡️ +5 💗)</label>
+            <input type="number" id="pettingenergy" name="pettingenergy" value="1">
+            <a href="#" class="btn-two green" onclick="petClicked()">Pet</a>
+            <br>
+            <label for="givingfood">Give Food? (-1🥨 -20🍓 +10💩)</label>
+            <input type="number" id="givingfood" name="givingfood" value="1">
+            <a href="#" class="btn-two blue" onclick="feedClicked()">Feed</a>
+            <br>
+            <label for="givingfood">Buy Food? (-125💎 +1🥨)</label>
+            <input type="number" id="buyingfood" name="buyingfood" value="1">
+            <a href="#" class="btn-two purple" onclick="buyClicked()">Buy</a>
+            <br>
+            <label>Poop (-30⚡️ 💩=0)</label>
+            <a href="#" class="btn-two cyan" onclick="poopClicked()">Poop</a>
+        </div>
+        <h2>Player</h2>
+        <div class="player">
+            <label for="energy">⚡️Energy:</label>
+            <input type="number" id="energy" name="energy" disabled><br>
+            <label for="food">🥨Food:</label>
+            <input type="number" id="food" name="food" disabled><br>
+            <label for="money">💎Money:</label>
+            <input type="number" id="money" name="money" disabled><br>
+        </div>
+        
+        <!-- For UNIT (Logic) testing with script.test.js, this must be type ="module" -->
+        <!-- And the script must end with export -->
+        <script src="./script.js"></script> 
+    </body>
+</html>
