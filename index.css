@@ -34,9 +34,8 @@ body {
     height: 90vh;
 }
 
-a {
+a, a:link, a:visited {
 	color: blanchedalmond;
-	
 }
 
 .panel {
