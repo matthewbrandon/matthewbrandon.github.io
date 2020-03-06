@@ -35,7 +35,7 @@ body {
 }
 
 .panel {
-	background-size: auto 100%;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 50px;
@@ -51,9 +51,9 @@ body {
     transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
     
     /* Border Test */
-    border: blanchedalmond;
+    /* border: blanchedalmond;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid; */
 }
 
 .panel h3 {

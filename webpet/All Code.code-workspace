@@ -2,7 +2,12 @@
 	"folders": [
 		{
 			"path": "/Users/matthew/code/side"
+		},
+		{
+			"path": "/Users/matthew/code/cohort4"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "cohort4"
+	}
 }
