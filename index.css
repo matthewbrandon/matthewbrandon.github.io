@@ -34,6 +34,11 @@ body {
     height: 90vh;
 }
 
+a {
+	color: blanchedalmond;
+	
+}
+
 .panel {
 	background-size: cover;
 	background-position: center;
