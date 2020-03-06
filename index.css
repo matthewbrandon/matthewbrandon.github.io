@@ -6,16 +6,32 @@
 
 body {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+    
+    /* Adding direction */
+    /* flex-direction: column; */
+    
+    /* Switch? */
+    align-items: center;
+    
+    justify-content: center;
 	font-family: 'Muli', sans-serif;
-	height: 100vh;
-	margin: 0;
+    
+    /* Was Height */
+    width: 100vh;
+    
+    margin: 0;
+
+    background-color: black;
 }
 
 .container {
-	display: flex;
-	width: 90vw;
+    display: flex;
+    
+    /* Adding direction */
+    flex-direction: column;
+    
+    /* Was Width */
+    height: 90vw;
 }
 
 .panel {
@@ -26,10 +42,18 @@ body {
 	color: #fff;
 	flex: 0.5;
 	cursor: pointer;
-	height: 80vh;
-	position: relative;
+    
+    /* Was Height */
+    width: 80vh;
+    
+    position: relative;
 	margin: 10px;
-	transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+    transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+    
+    /* Border Test */
+    border: blanchedalmond;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .panel h3 {
@@ -52,6 +76,9 @@ body {
 }
 
 
+/* Don't actually know what this section is doing */
+/* I think its hiding some if the sreen is smaller. */
+/* Not Working as Intended with changes */
 @media screen and (max-width: 480px) {
 	.container {
 		width: 100vw;
