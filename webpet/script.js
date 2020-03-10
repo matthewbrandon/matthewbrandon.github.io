@@ -31,8 +31,8 @@ const poopCost = 30;
 const howFulltoPoop = 30;
 
 // Set the initial values
-var player = new Player(100, 5, 250);
-var pet = new Pet("Lion", 20, 50, 45);
+let player = new Player(100, 5, 250);
+let pet = new Pet("Lion", 20, 50, 45);
 
 // Page Variables
 // Video list based on http://jsfiddle.net/bnzqkpza
@@ -43,7 +43,7 @@ var videoList = [
     "./assets/lion-eat.mp4"
 ];
 var activeVideo = 1;
-activeVideo.removeAttribute("loop");
+// activeVideo.removeAttribute("loop");
 petVideo.addEventListener('ended', function(e) {
     activeVideo = 0;
     petVideo.src = videoList[activeVideo];
@@ -67,34 +67,20 @@ function petWebPal(howMuchPets) {
 
 // Click Functions
 function petClicked(howMuchPets) {
-    howMuchPets = document.getElementById("pettingenergy").value;
-    // Checks
-    if (howMuchPets < 1) {
-        alert("Have to Pet at least once!");
-        // TODO ANIMATION
-        return false;
-    }
-    if (howMuchPets > (player.energy / pettingCost)) {
+    if (player.energy < pettingCost) {
         alert("Not Enough Energy for the Pets!!");
         // TODO ANIMATION
         return false;
     }
     // TODO ANIMATION
     // Adjust Values
-    player.energy -= (howMuchPets * pettingCost); 
-    pet.happiness += petWebPal(howMuchPets);
+    player.energy -= pettingCost; 
+    pet.happiness += pettingHappiness;
     setValuesToLabels();
 }
 
 function feedClicked(howManyFood) {
-    howManyFood = document.getElementById("givingfood").value;
-    // console.log("Clicked FEED " + howManyFood + " Food");
-    if (howManyFood < 1) {
-        alert("Have to give at least 1!");
-        // TODO ANIMATION
-        return false;
-    }
-    if (howManyFood > player.food) {
+    if (player.food < 1) {
         alert("Not Enough Food!!");
         // TODO ANIMATION
         return false;
@@ -112,25 +98,19 @@ function feedClicked(howManyFood) {
     }
     // TODO ANIMATION
     // Adjust Values
-    player.food -= howManyFood; 
-    pet.fullness += (howManyFood * foodFullness);
+    player.food -= 1; 
+    pet.fullness += foodFullness;
     setValuesToLabels();
 }
 
 function buyClicked(buyingFood) {
-    buyingFood = document.getElementById("buyingfood").value;
-    console.log("Clicked BUY " + buyingFood + " Food");
-    if (buyingFood < 1) {
-        alert("Must Buy at least One 🥨");
-        return false;
-    }
-    if (player.money < (foodCost * buyingFood)) {
+    if (player.money < foodCost) {
         alert("Not enough 💎");
         return false;
     }
     // TODO BUYING Animation
-    player.money -= (foodCost * buyingFood);
-    player.food += parseInt(buyingFood);
+    player.money -= foodCost;
+    player.food += 1;
     setValuesToLabels();
 }
 

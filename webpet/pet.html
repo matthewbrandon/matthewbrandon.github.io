@@ -16,14 +16,25 @@
         <link rel='icon' href='favicon.ico' type='image/x-icon' >
     </head>
     <body>
-        <h1>🦁WebPal🦁</h1>
         <div class="stats">
+            <div class ="petstats">
+            <h1>🦁WebPal🦁</h1>
             <label for="happiness">💗Happiness:</label>
             <input type="number" id="happiness" name="happiness" disabled><br>
             <label for="hunger">🍓Hunger:</label>
             <input type="number" id="hunger" name="hunger" disabled><br>
             <label for="fullness">💩Fullness:</label>
             <input type="number" id="fullness" name="fullness" disabled><br>
+            </div>
+        <div class="playerstats">
+            <h2>Player</h2>
+            <label for="energy">⚡️Energy:</label>
+            <input type="number" id="energy" name="energy" disabled><br>
+            <label for="food">🥨Food:</label>
+            <input type="number" id="food" name="food" disabled><br>
+            <label for="money">💎Money:</label>
+            <input type="number" id="money" name="money" disabled><br>
+            </div>
         </div>
         <div class ="pet">
             <video id ="petvideo" playsinline muted autoplay="autoplay" loop="loop" width="320" height="240">
@@ -32,31 +43,22 @@
         </div>
         <div class="container">
             <!-- TODO Make it so that it can grab these numbers from js -->
-            <label for="pettingenergy">Give Some Pets? (-10⚡️ +5 💗)</label>
-            <input type="number" id="pettingenergy" name="pettingenergy" value="1">
-            <a href="#" class="btn-two green" onclick="petClicked()">Pet</a>
+            <!-- <input type="number" id="pettingenergy" name="pettingenergy" value="1"> -->
+            <a href="#" class="btn-two green" onclick="petClicked()">Pet (-10⚡️ +5 💗)</a>
+            <!-- <label for="pettingenergy"></label> -->
             <br>
-            <label for="givingfood">Give Food? (-1🥨 -20🍓 +10💩)</label>
-            <input type="number" id="givingfood" name="givingfood" value="1">
-            <a href="#" class="btn-two blue" onclick="feedClicked()">Feed</a>
+            <!-- <label for="givingfood">Give Food? (-1🥨 -20🍓 +10💩)</label> -->
+            <!-- <input type="number" id="givingfood" name="givingfood" value="1"> -->
+            <a href="#" class="btn-two blue" onclick="feedClicked()">Feed (-1🥨 -20🍓 +10💩)</a>
             <br>
-            <label for="givingfood">Buy Food? (-125💎 +1🥨)</label>
-            <input type="number" id="buyingfood" name="buyingfood" value="1">
-            <a href="#" class="btn-two purple" onclick="buyClicked()">Buy</a>
+            <!-- <label for="givingfood">Buy Food? (-125💎 +1🥨)</label> -->
+            <!-- <input type="number" id="buyingfood" name="buyingfood" value="1"> -->
+            <a href="#" class="btn-two purple" onclick="buyClicked()">Shop (-125💎 +1🥨)</a>
             <br>
-            <label>Poop (-30⚡️ 💩=0)</label>
-            <a href="#" class="btn-two cyan" onclick="poopClicked()">Poop</a>
+            <!-- <label>Poop (-30⚡️ 💩=0)</label> -->
+            <a href="#" class="btn-two cyan" onclick="poopClicked()">Poop (-30⚡️ 💩=0)</a>
         </div>
-        <h2>Player</h2>
-        <div class="player">
-            <label for="energy">⚡️Energy:</label>
-            <input type="number" id="energy" name="energy" disabled><br>
-            <label for="food">🥨Food:</label>
-            <input type="number" id="food" name="food" disabled><br>
-            <label for="money">💎Money:</label>
-            <input type="number" id="money" name="money" disabled><br>
-        </div>
-        
+
         <!-- For UNIT (Logic) testing with script.test.js, this must be type ="module" -->
         <!-- And the script must end with export -->
         <script src="./script.js"></script> 
