@@ -1,10 +1,15 @@
-/* Crystal Pet
+/* Web Pal
 Matthew Brandon Thompson Feb 2020 */
 
 .pet {
     width: 95vw;
     align-content: center;
     text-align: center;
+}
+.stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 95vw;
 }
 
 /* Cool Buttons by Felipe Marcos */
@@ -24,12 +29,6 @@ body {
 	padding: 30px;
 	text-align: center;
 }
-.stats {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 95vw;
-}
-
 .header h1 {
 	font-weight: 300;
 	display: inline;
